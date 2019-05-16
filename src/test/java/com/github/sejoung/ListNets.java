@@ -24,8 +24,8 @@ public class ListNets {
 					&& inetAddress instanceof Inet4Address) {
 				System.out.printf("Display name: %s\n", netint.getDisplayName());
 				System.out.printf("Name: %s\n", netint.getName());
-				System.out.printf("getHostAddress: %s\n", inetAddress.getHostAddress());
-				System.out.printf("getAddress: %s\n", parserMac(inetAddress.getAddress()));
+				System.out.printf("getHostAddress: %s - %s\n", inetAddress.getHostAddress(),parserMac(inetAddress.getAddress()));
+
 			}
 
 		}
